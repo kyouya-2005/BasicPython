@@ -4,6 +4,7 @@ text = """
 """
 
 # TODO
-text = list(map(len, ["How", "I", "want", "a", "drink", "alcoholic", "of", "course", "after", "the", "heavy", "chapters", "involving", "quantum", "mechanics", "All", "of", "thy", "geometry", "Herr", "Planck", "is", "fairly", "hard"]))
+import re
 
-print(text)
+a = re.sub('[,.]',' ', text)
+print( *list(map(len, (a.split()))),sep='')
