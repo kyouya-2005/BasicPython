@@ -7,4 +7,4 @@ text = """
 import re
 
 a = re.sub('[,.]',' ', text)
-print( *list(map(len, (a.split()))),sep='')
+print( *list(map(len, (a.split( )))),sep='')
