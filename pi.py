@@ -8,4 +8,4 @@ import re
 
 a = re.sub('[,.]',' ', text)
 b =  a.split( )
-print( *list( map(len, (b) ) ), sep = '')
+print( *list( map( len, ( b ) ) ), sep = '')
