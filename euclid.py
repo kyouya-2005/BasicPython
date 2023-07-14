@@ -8,7 +8,6 @@ def gcd(a, b):
        a, b = b, a % b
 
        return b
-if __name__ == '__main__':
     num1 = 10
     num2 = 20
     GCD = gcd(num1, num2)

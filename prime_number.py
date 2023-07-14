@@ -2,22 +2,12 @@ a = 61
 b = 10
 
 # TODO
-if a <= 1:
-   print(False)
-else:
-   for i in range(2, int(a**0.5) + 1):
-      if a % i == 0:
-         print(False)
-         break
-   else:
-       print(True)
+def sosuu(x):
+    if x <= 1:
+        return False
+    for i in range(2, int(x**0.5) + 1):
+        return False
+    return True
 
-if b <= 1:
-   print(False)
-else:
-   for i in range(2, int(a**0.5) + 1):
-      if b % i == 0:
-         print(False)
-         break
-   else:
-       print(True)
+print(sosuu(a))
+print(sosuu(b))
