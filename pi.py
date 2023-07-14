@@ -4,4 +4,8 @@ text = """
 """
 
 # TODO
+import re
 
+a = re.sub('[,.]',' ', text)
+b =  a.split( )
+print( *list( map(len, (b) ) ), sep = '')
