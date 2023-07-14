@@ -3,44 +3,26 @@ b = 20
 
 # TODO
 def gcd(a, b):
-    r = a % b
 
-    while r != 0:
-       a, b = b, r
-       r = a % b
+    while b != 0:
+       a, b = b, a % b
+
        return b
 if __name__ == '__main__':
-    num1 = a
-    num2 = b
+    num1 = 10
+    num2 = 20
     GCD = gcd(num1, num2)
+
     print(f"({num1}, {num2}) -> gcd: {GCD}")
 
-    a = 14
-    b = 91
-def gcd(a, b):
-    r = a % b
-
-    while r != 0:
-       a, b = b, r
-       r = a % b
-       return b
-if __name__ == '__main__':
-    num1 = a
-    num2 = b
+    num1 = 14
+    num2 = 91
     GCD = gcd(num1, num2)
+
     print(f"({num1}, {num2}) -> gcd: {GCD}")
 
-a = 91
-b = 14
-def gcd(a, b):
-    r = a % b
-
-    while r != 0:
-       a, b = b, r
-       r = a % b
-       return b
-if __name__ == '__main__':
-    num1 = a
-    num2 = b
+    num1 = 91
+    num2 = 14
     GCD = gcd(num1, num2)
+    
     print(f"({num1}, {num2}) -> gcd: {GCD}")
