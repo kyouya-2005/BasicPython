@@ -10,5 +10,5 @@ N = 100
 a = 0
 b = math.pi / 2
 h = ( b - a ) / N
-s = ( h / 2 ) * ( f(a) + 2*sum(f ( h*i ) for i in range ( 1, N - 1)) + f(b))
+s = ( h / 3 ) * sum( (f( h*i ) + 4*f( h*( i + 1 ) ) + f( h*( i + 2 ) ) ) for i in range(0, N - 1, 2) )
 print(s)

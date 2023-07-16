@@ -2,10 +2,10 @@
 
 
 # TODO
-def gcd( a, b):
+def gcd(a, b):
 
     while b != 0:
-        a, b = b, a % b
+        a, b = b, b % a
         return b
 num1 = 10
 num2 = 20
