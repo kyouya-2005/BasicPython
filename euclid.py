@@ -5,7 +5,7 @@
 def gcd(a, b):
 
     while b != 0:
-        a, b = b, b % a
+        a, b = b, a / b
         return b
 num1 = 10
 num2 = 20
