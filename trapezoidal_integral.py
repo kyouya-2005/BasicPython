@@ -3,13 +3,10 @@ from math import sin
 # print(sin(0))
 # >>> 0
 # -----------
-a = 0
-b = 1
-n = 100
 import math
 def f( x ):
     return sin( x )
-def trapezoidal( f, a, b, n ):
+def trapezoidal( f, a = 0, b = 1, n = 100 ):
     h = ( b - a ) / n
     s = ( h / 2 ) * (sum( f( a + ( i + 1 ) * h ) + f( a + i * h ) for i in range( 1, n + 1 ) ) )
     return s
